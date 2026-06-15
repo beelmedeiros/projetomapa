@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #eaf6ff 0%, #d3ecff 45%, #b9deff 100%);
+    color: #0b2f4f;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(11, 76, 140, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid rgba(11, 76, 140, 0.06);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #d8eefc;
+    border-radius: 8px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.cadastro {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid rgba(11, 76, 140, 0.12);
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+:root {
+    --bg: #eaf6ff;
+    --text: #0b2f4f;
+    --card: rgba(255, 255, 255, 0.95);
+    --card-border: rgba(11, 118, 209, 0.12);
+    --input-bg: white;
+    --link: #0b76d1;
+}
+
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.glass-card,
+.cadastro,
+.profile-card,
+.btn-primary,
+input,
+textarea,
+select {
+    background: var(--card);
+}
+
+input,
+textarea,
+select {
+    border-color: var(--card-border);
+    color: var(--text);
+    background: var(--input-bg);
+}
+
+a,
+.btn-primary {
+    color: var(--link);
+}
+
+.theme-toggle-button {
+    position: fixed;
+    top: 18px;
+    right: 28px;
+    z-index: 1200;
+    border: 2px solid #3AA0FF;
+    background: white;
+    color: #0b76d1;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(11, 76, 140, 0.12);
+}
+
+.theme-toggle-button:hover {
+    background: #eef6ff;
+}
+
+
+:root {
+    --bg: #eaf6ff;
+    --text: #0b2f4f;
+    --card: rgba(255, 255, 255, 0.95);
+    --card-border: rgba(11, 118, 209, 0.12);
+    --input-bg: white;
+    --link: #0b76d1;
+}
+
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.glass-card,
+.cadastro,
+.profile-card,
+.btn-primary,
+input,
+textarea,
+select {
+    background: var(--card);
+}
+
+input,
+textarea,
+select {
+    border-color: var(--card-border);
+    color: var(--text);
+    background: var(--input-bg);
+}
+
+a,
+.btn-primary {
+    color: var(--link);
+}
+
+.theme-toggle-button {
+    
+    top: 18px;
+    right: 50px;
+    z-index: 1200;
+    border: 2px solid #3AA0FF;
+    background: white;
+    color: #0b76d1;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(11, 76, 140, 0.12);
+}
+
+.theme-toggle-button:hover {
+    background: #eef6ff;
+}
+
+.btn-primary {
+    border: 2px solid #0b76d1;
+    background: white;
+    color: #0b76d1;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 12px 20px !important;
+}
+
+
+.btn-primary:hover {
+    background: #0b76d1;
+    color: white;
+}
+
+.cadastro button {
+    background: linear-gradient(135deg, #3aa0ff 0%, #0b76d1 100%);
+    color: white;
+    box-shadow: 0 6px 14px rgba(11, 118, 209, 0.12);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid rgba(11, 76, 140, 0.06);
+    padding: 10px;
+    text-align: center;
+}
+
+.btnEmergencia {
+    width: 100%;
+    background: linear-gradient(180deg, #0b63b8 0%, #074a86 100%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    margin-top: 30px;
+    box-shadow: 0 8px 18px rgba(11, 76, 140, 0.12);
+}
+
+.btnEmergencia:hover {
+    filter: brightness(0.95);
+}
+
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 14px;
+    background: transparent;
+    color: #0b2f4f;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-voltar:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+}
+
+@media(max-width:768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento Veicular</title>
+
+    <link rel="stylesheet" href="style.css">
+    <a href="../index.html">Voltar para a página inicial</a>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Painel de Monitoramento</h1>
+
+        <section class="cadastro">
+
+            <h2>Cadastrar Veículo</h2>
+
+            <input type="text" id="placa" placeholder="Placa">
+
+            <input type="text" id="marca" placeholder="Marca">
+
+            <input type="text" id="modelo" placeholder="Modelo">
+
+            <button onclick="cadastrarVeiculo()">
+                Cadastrar Veículo
+            </button>
+
+        </section>
+
+        <section>
+
+            <br><h2>Veículos Cadastrados</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaVeiculos">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="emergencia">
+
+            <button class="btnEmergencia"
+            onclick="acionarEmergencia()">
+
+                 ACIONAR EMERGÊNCIA
+
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
